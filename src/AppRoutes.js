@@ -1,4 +1,6 @@
-import React,{Routes,Route} from 'react';
+import React from 'react';
+import {Routes} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { Home } from './Pages/Home';
 import { Index } from './Pages/Index';
 import { NotFound } from './Pages/NotFound';
@@ -9,7 +11,7 @@ export const AppRoutes = () => {
         <Routes>
             <Route path="/" element={<Index/>}/>
             <Route path="/home" element={<Home/>}/>
-            <Route element={<NotFound/>}/>
+            <Route path="*" element={<NotFound/>}/>
         </Routes>
         </>
     )
