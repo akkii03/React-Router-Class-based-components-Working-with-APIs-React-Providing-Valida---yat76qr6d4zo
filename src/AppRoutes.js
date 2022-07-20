@@ -1,4 +1,4 @@
-import React,{Routes,Route} from 'react-router-dom';
+import React,{Routes,Route} from 'react';
 import { Home } from './Pages/Home';
 import { Index } from './Pages/Index';
 import { NotFound } from './Pages/NotFound';
