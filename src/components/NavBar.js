@@ -5,14 +5,17 @@ import { Link } from 'react-router-dom';
 export const NavBar = () =>{
     return(
         <>
-        <div> 
+        <nav> 
             <ul>
                 <li>
                     <Link className="index-link" to="/">Index</Link>
-                    <Link className='home-link' to="/home">Home</Link>
                 </li>
+                   <li>
+                    <Link className='home-link' to="/home">Home</Link>
+                   </li>
+                
             </ul>
-        </div>
+        </nav>
         </>
     )
 }
